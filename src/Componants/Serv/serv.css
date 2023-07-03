@@ -1,0 +1,114 @@
+.serv{
+    padding: 1rem;
+    margin: 2rem 4rem;
+    display: flex;
+    height: 90vh;
+    padding: 2rem;
+    position: relative;
+}
+.blur{
+    position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background-color: var(--pep);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        filter: blur(122px);
+        z-index: -4;
+        left: -22%;
+        bottom: 1%;
+ }
+
+ .aesom{
+    /* flex: 1; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-weight: bold;
+    /* background-color: aqua; */
+ }
+ .aesom span{
+    line-height: 1.5;
+  }
+  .aesom > span:nth-child(1) {
+       font-size: 2.8rem;
+       color: var(--black);
+  }
+.aesom >:nth-child(2) {
+      font-size:2.5rem;
+      color: var(--yellow);
+      margin-bottom: 4%;
+}
+.aesom button{
+    width: 40%;
+    margin-top: 11%;
+}
+ .cards{
+    position: relative;
+    /* flex: 1; */
+    margin: 1rem;
+    text-align: center;
+    /* background-color: brown; */
+ }
+ .cards >*{
+    position: absolute;
+ }
+ .blur3{
+        position: absolute;
+        background-color: var(--yellow);
+        left: 40rem;
+        bottom: -10rem;
+        width: 22rem;
+        height: 22rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        filter: blur( 99px);
+        z-index: -4;
+        -webkit-filter: blur( 99px);
+}
+
+
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+   .serv {
+      margin: 0;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 0;
+      height: 70rem;
+         /* height: 66vh; */
+    }
+    .serv button {
+      width: 60%;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+      margin: 0;
+    }
+    .cards > * {
+      position: static;
+    }
+
+
+
+
+
+}

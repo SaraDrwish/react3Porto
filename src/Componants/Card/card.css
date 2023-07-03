@@ -1,0 +1,67 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 14rem;
+    height: 16rem;
+    margin: 2rem;
+    padding: 1rem;
+    border: 5px solid var(--oreng);
+        /* border: 5px solid var(--darkOrng); */
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.card img{
+width: 4rem;
+height: 4rem;
+}
+.card >:nth-child(2){
+    font-size: 2rem;
+    color: var(--oreng);
+}
+.card span:nth-of-type(2) {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+.card button{
+    width: 48%;
+    text-transform: capitalize;
+    margin-top: 8%;
+    height: 14%;
+    font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: unset;
+    color: var(--darkOrng);
+    box-shadow: 1px 1px 4px var(--oreng);
+}
+
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+.card{
+    width: auto;
+}
+
+
+}
+
+
+

@@ -1,0 +1,65 @@
+.portofolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    /* background-color: yellowgreen; */
+}
+.portofolio span:nth-child(1){
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.portofolio span:nth-child(2) {
+    font-size: 3rem;
+    color: var(--oreng);
+}
+/* .slideer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 165, 165);
+} */
+ .swiper{
+    overflow: visible!important;
+    /* background-color: rgba(183, 220, 220, 0.64); */
+}
+ .portofolio-slider{
+    /* background-color: aquamarine; */
+margin-top: 5%;
+width: 100%;
+  }
+ .swiper-slide {
+/* width: 144px; */
+  text-align: center;
+/* background-color: rgba(56, 56, 124, 0.871); */
+}
+.SwiperSlide img{
+    /* cursor: pointer; */
+    /* padding: 1rem; */
+    width: 20rem;
+    height: 18rem;
+    /* background-color: var(--blue); */
+   border-radius: 15%;
+   box-shadow: var(--small-shadow);
+     
+}
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+    .portofolio{
+        height: 25rem;
+    }
+.SwiperSlide img {
+    width: 6rem;
+}
+
+
+
+}

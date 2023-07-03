@@ -1,0 +1,236 @@
+.intro{
+    display: flex;
+    height: 88vh;
+    margin-top: 5rem;
+}
+.intro-left{
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    gap: 3rem;
+}
+.intro-left .intro-name{
+display: flex;
+flex-direction: column;
+}
+.intro-left .intro-name span:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.intro-left .intro-name span:nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
+.intro-left .intro-name span:nth-child(3) {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 1rem;
+}
+.intro-left  .intro-button{
+width: 8rem;
+height: 3rem;
+}
+.intro-left .intro-social{
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 4rem;
+ 
+}
+.intro-left .intro-social img{
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        transform:scale(1.5);
+        -webkit-transform:scale(1.5);
+        -moz-transform:scale(1.5);
+        -ms-transform:scale(1.5);
+        -o-transform:scale(1.5);
+        transition: all 0.4s ease;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+}
+.intro-left .intro-social img:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+
+/* --------   emojeis link  ---------   https: //pluspng.com/png-3518.html    ------- */
+
+.intro-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.intro-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+.intro-right .mainImg{
+    width: 40%;
+    height: 50%;
+    border-radius: 47% 53% 51% 49% / 75% 30% 70% 25%;
+}
+
+.intro-right > div:nth-child(1){
+    background: linear-gradient(var(--blue), var(--pep));
+     border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
+      width: 33rem;
+       height:33rem;
+        position: absolute; 
+        right: 14%;
+        top: 1%;
+          -webkit-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
+          -moz-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
+           -ms-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
+            -o-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
+}
+.intro-right > div:nth-child(2){
+    border-radius: 61px 161px 48px 163px;
+        -webkit-border-radius: 61px 161px 48px 163px;
+        -moz-border-radius: 61px 161px 48px 163px;
+        border: 36px solid #ffbb30;
+        background: linear-gradient(var(--yellow), var(--oreng));
+        width: 22rem;
+        height: 22rem;
+}
+
+.intro-right .floott{
+/* text-align: left;  */
+right: 6%;
+top: 0;
+}
+ 
+.intro-right .floott2 {
+    left: 2%;
+    bottom: 20%;
+}
+
+.flootingDiv img{
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+.intro-right > img {
+     width: 6rem;
+     height: 6rem;
+}
+
+/* .intro-right>img:nth-child(7){
+    left: 22%;
+} */
+/* .intro-right>img:nth-child(6) {
+    left: 44%;
+    top: 60%;
+} */
+
+/* .intro-right>img:nth-child(5) {
+    left: 10%;
+} */
+
+.intro-right>img:nth-child(4) {
+    top: 0%;
+    left: 4%;
+}
+
+.blur1{
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    background-color: var(--pep);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    filter: blur(155px);
+    z-index: -4;
+    right: -6%;
+    top: -8%;
+    -webkit-filter: blur(155px);
+}
+.blur2{
+     position: absolute;
+     width: 26rem;
+     height: 26rem;
+     border-radius: 50%;
+     z-index: -4;
+     background-color: var(--blue);
+     /* left: -33%;*/
+        left: -6%;
+     bottom: -11%;
+     filter: blur(99px);
+     -webkit-filter: blur(99px);
+}
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    .intro {
+       flex-direction: column;
+       height: 52rem;
+    }
+
+    .intro-right{
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+        font-size: small;
+        left: -2%;
+}
+.intro-left .intro-social {
+    margin-top: 1rem;
+    gap: 1.8rem;
+    padding: 0.5rem;
+ }
+ .intro-left .intro-social img {
+     width: 1.4rem;
+     height: 1.4rem; 
+ }
+ .intro-right>div:nth-child(1) {
+     width: 29rem;
+     height: 29rem;
+     right: -14%;
+     top: -30%;
+ }
+
+.FlootingDiv:nth-of-type(1) ,  .floott{
+    top: -11% !important;
+    right: -28%  !important ;
+}
+ 
+.FlootingDiv:nth-of-type(2)  , .floott2{
+    bottom: -11% !important;
+   left: -22% !important;
+}
+
+
+
+}
+

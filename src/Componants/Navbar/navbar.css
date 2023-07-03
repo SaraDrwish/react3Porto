@@ -1,0 +1,86 @@
+.n-porto{
+    display: flex;
+    justify-content: space-between;
+    height: 11vh;
+}
+.n-left{
+display: flex;
+flex: 1;
+align-items: center;
+gap: 2rem;
+}
+.n-left .n-logo{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.n-right{
+display: flex;
+flex: 1;
+align-items: center;
+justify-content: center;
+font-weight: 400;
+gap: 2rem;
+}
+.n-right .n-list{
+    flex: 10;  
+}
+.n-right .n-list > ul{
+    /* background-color: rgb(174, 132, 53); */
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.4rem;
+}
+.n-right .n-list ul li {
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+.n-right .n-list > ul > li:hover{
+    color: var(--oreng);
+    cursor: pointer;
+}
+.n-right .n-list>ul>a:hover {
+    color: var(--oreng);
+    cursor: pointer;
+}
+.n-button{
+    flex: 2;
+}
+/* .n-right button{
+    border: none;
+    background-color: var(--oreng);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+} */
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+@media screen and (max-width:480px) {
+
+
+    .n-list {
+display: none;
+    }
+    .n-button{
+        display: none;
+    }
+
+
+
+
+
+
+
+}

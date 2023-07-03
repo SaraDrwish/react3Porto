@@ -1,0 +1,20 @@
+  .flootingDiv {
+   display: flex;
+   font-size: 1.8rem;
+   color: var(--yellow);
+   background: linear-gradient( var(--darkOrng) , var(--pep) );
+   justify-content: space-evenly;
+   align-items: center;
+   box-shadow: var(--box-shadow);
+   padding: 0.2rem 1.2rem 0.2rem 1.2rem ;
+   border-radius: 1rem;
+   -webkit-border-radius: 1rem;
+   -moz-border-radius: 1rem;
+   -ms-border-radius: 1rem;
+   -o-border-radius: 1rem;
+   text-transform: capitalize;
+}
+
+.flootingDiv span{
+  color: var(--black);
+}
